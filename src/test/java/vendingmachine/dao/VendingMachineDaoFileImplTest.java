@@ -1,6 +1,8 @@
 package vendingmachine.dao;
 
 import org.junit.jupiter.api.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import vendingmachine.dto.Item;
 
 import java.util.List;

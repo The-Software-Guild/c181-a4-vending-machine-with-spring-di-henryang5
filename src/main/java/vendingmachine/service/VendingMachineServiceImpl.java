@@ -9,10 +9,12 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//@Component
 public class VendingMachineServiceImpl implements VendingMachineService {
     private VendingMachineDao dao;
     private VendingMachineAudioDao auditDao;
 
+   // @Autowired
     public VendingMachineServiceImpl(VendingMachineDao dao, VendingMachineAudioDao auditDao)
     {
         this.dao = dao;

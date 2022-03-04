@@ -1,23 +1,24 @@
 package vendingmachine.controller;
 
+import vendingmachine.service.VendingMachineService;
 import vendingmachine.dao.VendingMachinePersistenceException;
 import vendingmachine.dto.Change;
 import vendingmachine.dto.Coins;
 import vendingmachine.dto.Item;
 import vendingmachine.service.VendingMachineInsufficientFundsException;
 import vendingmachine.service.VendingMachineNoItemInventoryException;
-import vendingmachine.service.VendingMachineService;
 import vendingmachine.ui.VendingMachineView;
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
+//@Component
 public class VendingMachineController {
     private VendingMachineView view;
     private VendingMachineService service;
 
-
+   // @Autowired
     public VendingMachineController(VendingMachineView view, VendingMachineService service) {
         this.view = view;
         this.service = service;

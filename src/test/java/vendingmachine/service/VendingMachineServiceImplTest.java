@@ -1,6 +1,8 @@
 package vendingmachine.service;
 
 import org.junit.jupiter.api.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import vendingmachine.dao.VendingMachineAudioDao;
 import vendingmachine.dao.VendingMachineDao;
 import vendingmachine.dao.VendingMachinePersistenceException;
@@ -18,9 +20,15 @@ public class VendingMachineServiceImplTest {
 
     public VendingMachineServiceImplTest()
     {
-        VendingMachineDao dao = new VendingMachineDaoStubImpl();
-        VendingMachineAudioDao auditDao = new VendingMachineAuditDaoStubImpl();
-        service = new VendingMachineServiceImpl(dao, auditDao);
+//        VendingMachineDao dao = new VendingMachineDaoStubImpl();
+//        VendingMachineAudioDao auditDao = new VendingMachineAuditDaoStubImpl();
+//        service = new VendingMachineServiceImpl(dao, auditDao);
+
+
+        ApplicationContext ctx =
+                new ClassPathXmlApplicationContext("applicationContext.xml");
+        service =
+                ctx.getBean("serviceLayer", VendingMachineServiceImpl.class);
     }
 
     @BeforeEach

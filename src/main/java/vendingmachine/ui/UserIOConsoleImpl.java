@@ -3,6 +3,7 @@ package vendingmachine.ui;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+//@Component
 public class UserIOConsoleImpl implements UserIO {
     Scanner sc;
 

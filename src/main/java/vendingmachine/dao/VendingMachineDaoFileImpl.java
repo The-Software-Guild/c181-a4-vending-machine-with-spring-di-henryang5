@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.*;
 
+//@Component
 public class VendingMachineDaoFileImpl implements VendingMachineDao{
     Map<String, Item> itemMap;
     private final String ITEM_FILE;

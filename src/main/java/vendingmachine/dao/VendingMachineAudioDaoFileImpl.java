@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDateTime;
 
+//@Component
 public class VendingMachineAudioDaoFileImpl implements VendingMachineAudioDao{
 
     public static final String AUDIT_FILE = "audit.txt";

@@ -1,7 +1,7 @@
 package vendingmachine.ui;
 
-import vendingmachine.dto.Coins;
 import vendingmachine.dto.Item;
+import vendingmachine.dto.Coins;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
@@ -9,9 +9,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+//@Component
 public class VendingMachineView {
     private UserIO io;
 
+   // @Autowired
     public VendingMachineView(UserIO io)
     {
         this.io = io;
